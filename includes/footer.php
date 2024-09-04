@@ -49,7 +49,7 @@ echo "<script>alert('Something went wrong. Please try again');</script>";
         </div>
   
         <div class="col-md-3 col-sm-6">
-          <h6>Subscribe For Free ticket</h6>
+          <h6>Subscribe Newsletter</h6>
           <div class="newsletter-form">
             <form method="post">
               <div class="form-group">
@@ -79,7 +79,7 @@ echo "<script>alert('Something went wrong. Please try again');</script>";
           </div>
         </div>
         <div class="col-md-6 col-md-pull-6">
-          <h3 class="copy-right">Ghani Coders.</h3>
+          <p class="copy-right">Car Rental Portal.</p>
         </div>
       </div>
     </div>

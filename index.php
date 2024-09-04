@@ -14,34 +14,46 @@ error_reporting(0);
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+ 
 </head>
 <body>
 
-    <!-- Header Section -->
-    <?php include('includes/header.php');?>
+       <!-- Header Section -->
+       <?php include('includes/header.php');?>
+
 
     <!-- Carousel Slider -->
-    <div id="yachtCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assets/images/yacht1.jpg" class="d-block w-100" alt="Yacht 1">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/images/yacht2.jpg" class="d-block w-100" alt="Yacht 2">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/images/yacht3.jpg" class="d-block w-100" alt="Yacht 3">
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#yachtCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#yachtCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+    <div id="carouselExampleInterval " class="carousel slide" data-bs-ride="carousel">
+     <div class="carousel-inner px-1">
+     <div class="carousel-item active" data-bs-interval="10000">
+      <img src="assets/images/chennai.jpg" class="d-block w-100" alt="...">
+     </div>
+     <div class="carousel-item" data-bs-interval="2000">
+      <img src="assets/images/goa.jpg" class="d-block w-100" alt="...">
     </div>
+    <div class="carousel-item">
+      <img src="assets/images/kerala.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/kolkata.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/mumbai.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/tamilnadu.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
     <!-- About Section -->
     <section class="about-section py-5">
@@ -58,7 +70,7 @@ error_reporting(0);
     <!-- services -->
      <section>
      <div class="container mt-5">
-    <h2 class="text-center mb-4">Our Yacht Rental Services</h2>
+    <h2 class="text-center mb-3">Our Yacht Rental Services</h2>
     <div class="row">
         <!-- Service 1 -->
         <div class="col-md-4">

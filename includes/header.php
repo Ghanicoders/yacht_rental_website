@@ -1,22 +1,44 @@
+
 <header>
-  <!-- Navigation -->
-  <nav id="navigation_bar" class="navbar navbar-default">
-    <div class="navbar-header">
-      <button id="menu_slide" data-target="#navigation" aria-expanded="false" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+<nav class="navbar navbar-expand-lg navbar-light bg-light px-2">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+      Bootstrap
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-    </div>
-    <div class="header_wrap">
-      <div class="user_login">
-        <ul>
-          <li class="dropdown">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.php">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page.php?type=aboutus">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="car-listing.php">Car Listing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page.php?type=faqs">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.php">Contact Us</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+
+
+          
+          <div class="user_login dropdown">
             <?php if(strlen($_SESSION['login'])==0) { ?>
-              <a href="#loginform" data-toggle="modal" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle" aria-hidden="true"></i> Login / Register <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+              <a href="#loginform" data-bs-toggle="modal" aria-haspopup="true" aria-expanded="false" class="btn btn-outline-primary">
+                <i class="fa fa-user-circle" aria-hidden="true"></i> Login / Register
+              </a>
             <?php } else { ?>
-              <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle" aria-hidden="true"></i>
+              <a href="#" class="btn btn-outline-primary dropdown-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
                 <?php 
                 $email = $_SESSION['login'];
                 $sql = "SELECT FullName FROM tblusers WHERE EmailId=:email";
@@ -30,43 +52,26 @@
                   }
                 }
                 ?>
-                <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-              <ul class="dropdown-menu">
-                <li><a href="profile.php">Profile Settings</a></li>
-                <li><a href="update-password.php">Update Password</a></li>
-                <li><a href="my-booking.php">My Booking</a></li>
-                <li><a href="post-testimonial.php">Post a Testimonial</a></li>
-                <li><a href="my-testimonials.php">My Testimonial</a></li>
-                <li><a href="logout.php">Sign Out</a></li>
+              </a>
+              <ul class="dropdown-menu mb-3 " aria-labelledby="userDropdown">
+                <li><a class="dropdown-item" href="profile.php">Profile Settings</a></li>
+                <li><a class="dropdown-item" href="update-password.php">Update Password</a></li>
+                <li><a class="dropdown-item" href="my-booking.php">My Booking</a></li>
+                <li><a class="dropdown-item" href="post-testimonial.php">Post a Testimonial</a></li>
+                <li><a class="dropdown-item" href="my-testimonials.php">My Testimonial</a></li>
+                <li><a class="dropdown-item" href="logout.php">Sign Out</a></li>
               </ul>
             <?php } ?>
-          </li>
-        </ul>
-      </div>
-      <div class="header_search">
-        <div id="search_toggle"><i class="fa fa-search" aria-hidden="true"></i></div>
-        <form action="search.php" method="post" id="header-search-form">
-          <input type="text" placeholder="Search..." name="searchdata" class="form-control" required="true">
-          <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-        </form>
-      </div>
-    </div>
-    <div class="collapse navbar-collapse" id="navigation">
-      <div class="mb-3">
-        <div class="logo">
-          <a href="index.php">
-            <img src="assets/images/logo.png" alt="image"/>
-          </a>
+          </div>
+          <div class="container-fluid">
+              <form action="search.php" method="post" id="header-search-form" class="d-flex">
+                <input type="text" placeholder="Search..." name="searchdata" class="form-control me-2" required>
+                <button type="submit" class="btn btn-outline-success">Search</button>
+              </form>
+            </div>
         </div>
-        <ul class="nav navbar-nav">
-          <li><a href="index.php">Home</a></li>
-          <li><a href="page.php?type=aboutus">About Us</a></li>
-          <li><a href="car-listing.php">Car Listing</a></li>
-          <li><a href="page.php?type=faqs">FAQs</a></li>
-          <li><a href="contact-us.php">Contact Us</a></li>
-        </ul>
       </div>
     </div>
   </nav>
   <!-- Navigation end --> 
-</header>
+  </header>
