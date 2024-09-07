@@ -3,7 +3,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light px-2">
     <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+      <img src="assets/pics/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
       Bootstrap
     </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,7 +18,7 @@
             <a class="nav-link" href="page.php?type=aboutus">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="car-listing.php">Car Listing</a>
+            <a class="nav-link" href="car-listing.php">Yachts</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="page.php?type=faqs">FAQs</a>
@@ -34,7 +34,7 @@
           <div class="user_login dropdown">
             <?php if(strlen($_SESSION['login'])==0) { ?>
               <a href="#loginform" data-bs-toggle="modal" aria-haspopup="true" aria-expanded="false" class="btn btn-outline-primary">
-                <i class="fa fa-user-circle" aria-hidden="true"></i> Login / Register
+                <i class="fa fa-user-circle" aria-hidden="true"></i> Login/signup
               </a>
             <?php } else { ?>
               <a href="#" class="btn btn-outline-primary dropdown-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">

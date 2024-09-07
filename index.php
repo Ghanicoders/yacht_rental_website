@@ -23,7 +23,7 @@ error_reporting(0);
        <?php include('includes/header.php');?>
 
 
-       <?php include('includes/assets/carosel1.php');?>
+       <?php include('includes/carosel1.php');?>
 
     <!-- About Section -->
     <section class="about-section py-5">
@@ -70,7 +70,7 @@ error_reporting(0);
                 <img src="assets/images/chennai.jpg" class="card-img-top img-fluid" alt="Yacht Rental in Chennai">
                 <div class="card-body">
                     <h5 class="card-title">Yacht Rental in Chennai</h5>
-                    <p class="card-text">Sail along the coast of Chennai with our exclusive yacht rental services.</p>
+                    <p class="card-text">Sail alon  g the coast of Chennai with our exclusive yacht rental services.</p>
                     <a href="#" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
@@ -128,6 +128,12 @@ error_reporting(0);
             </div>
         </div>
     </section>
+    
+    <!-- about us  -->
+     <h1>about us </h1>
+     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur nisi aliquam quia voluptatum voluptas molestias. Totam a dolo
+        r veritatis quod aut consequatur sit et itaque, nulla, tempora, qui enim debitis!</p>
+
 
     <!-- Footer Section -->
     <?php include('includes/footer.php');?>
