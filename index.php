@@ -23,37 +23,7 @@ error_reporting(0);
        <?php include('includes/header.php');?>
 
 
-    <!-- Carousel Slider -->
-    <div id="carouselExampleInterval " class="carousel slide" data-bs-ride="carousel">
-     <div class="carousel-inner px-1">
-     <div class="carousel-item active" data-bs-interval="10000">
-      <img src="assets/images/pics/sea ray slr 400 ent1.jpg" class="d-block w-100" alt="...">
-     </div>
-     <div class="carousel-item" data-bs-interval="2000">
-      <img src="assets/images/pics/sea ray slr 400 ext1.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="assets/images/kerala.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="assets/images/kolkata.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="assets/images/mumbai.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="assets/images/tamilnadu.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+       <?php include('includes/assets/carosel1.php');?>
 
     <!-- About Section -->
     <section class="about-section py-5">
