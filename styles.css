@@ -124,3 +124,7 @@ input[type="submit"]:hover {
 span {
     color: red;
 }
+
+#lmm {
+    margin: 10%;
+}

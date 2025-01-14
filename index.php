@@ -7,8 +7,8 @@ error_reporting(0);
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Yacht Rental</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -37,82 +37,50 @@ error_reporting(0);
         </div>
     </section>
 
-    <!-- services -->
-     <section>
-     <div class="container mt-5">
-    <h2 class="text-center mb-3">Our Yacht Rental Services</h2>
-    <div class="row">
-        <!-- Service 1 -->
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <img src="assets/images/kolkata.jpg" class="card-img-top img-fluid" alt="Yacht Rental in Kolkata">
-                <div class="card-body">
-                    <h5 class="card-title">Yacht Rental in Kolkata</h5>
-                    <p class="card-text">Explore the beautiful waters of Kolkata with our luxury yachts available for rent.</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
-                </div>
+
+
+<!-- Recently Listed New Cars -->
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="resentnewcar">
+    <div class="row"> <!-- Move the row here to wrap all cards -->
+      <?php 
+        $sql = "SELECT tblvehicles.VehiclesTitle,tblbrands.BrandName,tblvehicles.PricePerDay,tblvehicles.FuelType,tblvehicles.ModelYear,tblvehicles.id,tblvehicles.SeatingCapacity,tblvehicles.VehiclesOverview,tblvehicles.Vimage1 from tblvehicles join tblbrands on tblbrands.id=tblvehicles.VehiclesBrand limit 9";
+        $query = $dbh->prepare($sql);
+        $query->execute();
+        $results = $query->fetchAll(PDO::FETCH_OBJ);
+        $cnt = 1;
+        if ($query->rowCount() > 0) {
+          foreach ($results as $result) {
+      ?>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <div class="card-body"> 
+              <a href="vehical-details.php?vhid=<?php echo htmlentities($result->id); ?>">
+                <img src="admin/img/vehicleimages/<?php echo htmlentities($result->Vimage1); ?>" class="img-responsive card-img-top" alt="image">
+              </a>
+              <ul>
+                <li><i class="fa fa-car" aria-hidden="true"></i><?php echo htmlentities($result->FuelType); ?></li>
+                <li><i class="fa fa-calendar" aria-hidden="true"></i><?php echo htmlentities($result->ModelYear); ?> Model</li>
+                <li><i class="fa fa-user" aria-hidden="true"></i><?php echo htmlentities($result->SeatingCapacity); ?> seats</li>
+              </ul>
             </div>
-        </div>
-        <!-- Service 2 -->
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <img src="assets/images/goa.jpg" class="card-img-top img-fluid" alt="Yacht Rental in Goa">
-                <div class="card-body">
-                    <h5 class="card-title">Yacht Rental in Goa</h5>
-                    <p class="card-text">Enjoy the serene beaches of Goa on our premium yachts, perfect for any occasion.</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
-                </div>
+            <div class="car-title-m ml-5">
+              <h6><a href="vehical-details.php?vhid=<?php echo htmlentities($result->id); ?>"> <?php echo htmlentities($result->VehiclesTitle); ?></a></h6>
+              <span class="price">$<?php echo htmlentities($result->PricePerDay); ?> /Day</span>
             </div>
-        </div>
-        <!-- Service 3 -->
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <img src="assets/images/chennai.jpg" class="card-img-top img-fluid" alt="Yacht Rental in Chennai">
-                <div class="card-body">
-                    <h5 class="card-title">Yacht Rental in Chennai</h5>
-                    <p class="card-text">Sail alon  g the coast of Chennai with our exclusive yacht rental services.</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
-                </div>
+            <div class="inventory_info_m">
+              <p><?php echo substr($result->VehiclesOverview, 0, 70); ?></p>
             </div>
+          </div>
         </div>
-    </div>
-    <div class="row">
-        <!-- Service 4 -->
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <img src="assets/images/tamilnadu.jpg" class="card-img-top img-fluid" alt="Yacht Rental in Tamil Nadu">
-                <div class="card-body">
-                    <h5 class="card-title">Yacht Rental in Tamil Nadu</h5>
-                    <p class="card-text">Experience the beauty of Tamil Nadu’s coastline with our luxurious yacht rentals.</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
-                </div>
-            </div>
-        </div>
-        <!-- Service 5 -->
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <img src="assets/images/mumbai.jpg" class="card-img-top img-fluid" alt="Yacht Rental in Mumbai">
-                <div class="card-body">
-                    <h5 class="card-title">Yacht Rental in Mumbai</h5>
-                    <p class="card-text">Discover the bustling waters of Mumbai with our top-of-the-line yachts.</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
-                </div>
-            </div>
-        </div>
-        <!-- Service 6 -->
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <img src="assets/images/kerala.jpg" class="card-img-top img-fluid" alt="Yacht Rental in Kerala">
-                <div class="card-body">
-                    <h5 class="card-title">Yacht Rental in Kerala</h5>
-                    <p class="card-text">Cruise through the backwaters of Kerala with our luxurious yacht services.</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </div>
+      <?php 
+          }
+        }
+      ?>
+    </div> <!-- End of row -->
+  </div>
 </div>
-     </section>
+
 
 
 
@@ -157,5 +125,7 @@ error_reporting(0);
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
+
+
 </body>
 </html>
