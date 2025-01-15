@@ -156,4 +156,245 @@ footer {
       margin-bottom: 15px;
     }
   }
+
+  /* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #005bb5;
+}
+
+/* Page Header Styles */
+.page-header {
+  background-color: #0066cc;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.page-header .page-heading h1 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.page-header .coustom-breadcrumb {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+
+.page-header .coustom-breadcrumb li {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.page-header .coustom-breadcrumb li a {
+  color: #fff;
+}
+
+/* User Profile Section */
+.user_profile {
+  padding: 40px 0;
+}
+
+.user_profile_info {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upload_user_logo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.dealer_info {
+  max-width: 500px;
+  margin-left: 20px;
+}
+
+.dealer_info h5 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+.dealer_info p {
+  font-size: 16px;
+  color: #666;
+}
+
+.dealer_info p br {
+  margin-bottom: 5px;
+}
+
+/* Sidebar */
+.sidebar {
+  margin-top: 20px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px;
+  background-color: #0066cc;
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.sidebar a:hover {
+  background-color: #004d99;
+}
+
+/* Booking List Styles */
+.profile_wrap {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile_wrap h5 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.vehicle_listing {
+  list-style-type: none;
+  padding: 0;
+}
+
+.vehicle_listing li {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 20px;
+}
+
+.vehicle_img img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.vehicle_title {
+  margin-left: 20px;
+  max-width: 600px;
+}
+
+.vehicle_title h6 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.vehicle_title p {
+  font-size: 14px;
+  color: #666;
+}
+
+.vehicle_status {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.vehicle_status a {
+  font-size: 12px;
+  color: #fff;
+  background-color: #4caf50;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+.vehicle_status a.cancelled {
+  background-color: #f44336;
+}
+
+.vehicle_status a.not-confirmed {
+  background-color: #ff9800;
+}
+
+.table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.table td {
+  background-color: #fff;
+}
+
+.table th, .table td {
+  font-size: 14px;
+}
+
+.table tr:last-child th {
+  text-align: right;
+}
+
+.table tr:last-child td {
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2196f3;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #0066cc;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #f1f1f1;
+}
+
+
   

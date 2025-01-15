@@ -15,10 +15,10 @@
             <a class="nav-link" href="index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="page.php?type=aboutus">About Us</a>
+            <a class="nav-link" href="aboutus.php">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="car-listing.php">Yachts</a>
+            <a class="nav-link" href="index.php">Yachts</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="page.php?type=faqs">FAQs</a>
@@ -57,8 +57,6 @@
                 <li><a class="dropdown-item" href="profile.php">Profile Settings</a></li>
                 <li><a class="dropdown-item" href="update-password.php">Update Password</a></li>
                 <li><a class="dropdown-item" href="my-booking.php">My Booking</a></li>
-                <li><a class="dropdown-item" href="post-testimonial.php">Post a Testimonial</a></li>
-                <li><a class="dropdown-item" href="my-testimonials.php">My Testimonial</a></li>
                 <li><a class="dropdown-item" href="logout.php">Sign Out</a></li>
               </ul>
             <?php } ?>
