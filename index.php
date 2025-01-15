@@ -124,12 +124,6 @@ error_reporting(0);
                 <p class="lead">
                     Welcome to our Boat Rental Service! We provide a luxurious and unforgettable experience on the water. Whether you're looking for a peaceful day on the lake or an exciting adventure on the sea, our fleet of well-maintained boats is ready to serve you.
                 </p>
-                <p>
-                    Our mission is to offer top-notch service, comfort, and safety to all our customers. We pride ourselves on providing personalized experiences tailored to your needs, making sure every moment spent on our boats is a memorable one.
-                </p>
-                <p>
-                    With a wide range of options, from small leisure boats to luxury yachts, we cater to all preferences and budgets. Book your next adventure with us, and let us help you create memories that will last a lifetime!
-                </p>
             </div>
         </div>
     </div>
