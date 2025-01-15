@@ -21,7 +21,7 @@
             <a class="nav-link" href="index.php">Yachts</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="page.php?type=faqs">FAQs</a>
+            <a class="nav-link" href="faqs.php">FAQs</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact-us.php">Contact Us</a>

@@ -115,21 +115,6 @@ error_reporting(0);
 </section>
 
 
-<!-- About Us -->
-<section class="about-us py-3 bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h1 class="text-primary mb-4">About Us</h1>
-                <p class="lead">
-                    Welcome to our Boat Rental Service! We provide a luxurious and unforgettable experience on the water. Whether you're looking for a peaceful day on the lake or an exciting adventure on the sea, our fleet of well-maintained boats is ready to serve you.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
 
     <!-- Footer Section -->
     <?php include('includes/footer.php');?>
