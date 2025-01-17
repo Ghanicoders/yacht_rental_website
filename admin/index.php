@@ -78,6 +78,9 @@ echo "<script type='text/javascript'> document.location = 'dashboard.php'; </scr
 			</div>
 		</div>
 	</div>
+
+
+	
 	
 	<!-- Loading Scripts -->
 	<script src="js/jquery.min.js"></script>

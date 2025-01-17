@@ -42,6 +42,8 @@ else{
 <body>
 <?php include('includes/header.php');?>
 
+
+
 	<div class="ts-main-content">
 <?php include('includes/leftbar.php');?>
 		<div class="content-wrapper">
