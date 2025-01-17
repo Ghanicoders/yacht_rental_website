@@ -174,6 +174,7 @@ $brands=$query3->rowCount();
 
 	}
 	</script>
+	<?php include('includes/chart_bookings.php');?>
 </body>
 </html>
 <?php } ?>

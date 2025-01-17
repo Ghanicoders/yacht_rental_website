@@ -21,7 +21,7 @@
 
 <li><a href="#"><i class="fa fa-sitemap"></i> Bookings</a>
 					<ul>
-					<li><a href="chart_bookings.php">Chart_booking</a></li>
+					<!-- <li><a href="chart_bookings.php">Chart_booking</a></li> -->
 					<li><a href="manage-bookings.php">All-booking</a></li>
 						<li><a href="new-bookings.php">New</a></li>
 						<li><a href="confirmed-bookings.php">Confirmed</a></li>
