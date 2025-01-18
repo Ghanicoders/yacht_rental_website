@@ -82,11 +82,11 @@ $msg="Vehicle  record deleted successfully";
 				<div class="row">
 					<div class="col-md-12">
 
-						<h2 class="page-title">Manage Vehicles</h2>
+						<h2 class="page-title">Manage Yachts</h2>
 
 						<!-- Zero Configuration Table -->
 						<div class="panel panel-default">
-							<div class="panel-heading">Vehicle Details</div>
+							<div class="panel-heading">Yachts Details</div>
 							<div class="panel-body">
 							<?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
@@ -94,7 +94,7 @@ $msg="Vehicle  record deleted successfully";
 									<thead>
 										<tr>
 										<th>#</th>
-											<th>Vehicle Title</th>
+											<th>Yachts Title</th>
 											<th>Brand </th>
 											<th>Price Per day</th>
 											<th>Fuel Type</th>
@@ -105,7 +105,7 @@ $msg="Vehicle  record deleted successfully";
 									<tfoot>
 										<tr>
 										<th>#</th>
-										<th>Vehicle Title</th>
+										<th>Yachts Title</th>
 											<th>Brand </th>
 											<th>Price Per day</th>
 											<th>Fuel Type</th>

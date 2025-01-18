@@ -121,7 +121,7 @@ $msg="Data updated successfully";
 				<div class="row">
 					<div class="col-md-12">
 					
-						<h2 class="page-title">Edit Vehicle</h2>
+						<h2 class="page-title">Edit Yachts</h2>
 
 						<div class="row">
 							<div class="col-md-12">
